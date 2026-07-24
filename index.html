@@ -15,10 +15,12 @@
   <main class="panel inicio">
     <p class="eyebrow">Pizza Shop</p>
     <h1>Comenzar jornada</h1>
-    <p class="descripcion">Indicá cuántas masas tenés disponibles para abrir las ventas.</p>
+    <p class="descripcion">Indicá las masas de pizza y las unidades de empanadas disponibles para abrir las ventas.</p>
     <form class="form-inicio" action="ventas.html">
-      <label class="sr-only" for="masas">Masas disponibles</label>
+      <label class="sr-only" for="masas">Masas de pizza disponibles</label>
       <input id="masas" name="masas" type="number" min="0" step="1" inputmode="numeric" required autofocus placeholder="Masas disponibles">
+      <label class="sr-only" for="empanadas-iniciales">Empanadas disponibles</label>
+      <input id="empanadas-iniciales" name="empanadas" type="number" min="0" step="1" inputmode="numeric" required placeholder="Empanadas disponibles">
       <button type="submit">Abrir ventas</button>
     </form>
   </main>
