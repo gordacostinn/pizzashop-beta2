@@ -4,7 +4,7 @@ Pizza Shop is a mobile-first beta web application for managing daily sales in a 
 
 ## Live demo
 
-Add your GitHub Pages link here after publishing the project.
+https://gordacostinn.github.io/pizzashop-beta2/
 
 ## Features
 
@@ -60,4 +60,4 @@ The next version will use Flask and SQL to add persistent storage, multi-device 
 
 ## Author
 
-Built by [your name].
+Built by [Santiago Perazzo].
