@@ -1,0 +1,109 @@
+/* Reserva espacio al final mientras la preview flotante está visible. */
+body.pedido-abierto .ventas-panel {
+  padding-bottom: calc(48vh + 112px);
+}
+
+/* Ajustes exclusivos para la vista de ventas en celular. */
+@media (max-width: 600px) {
+  body.pedido-abierto .ventas-panel {
+    /* Reserva la altura completa del panel fijo para poder desplazar
+       el catálogo y el enlace de cierre por encima de la preview. */
+    padding-bottom: calc(52vh + 128px);
+  }
+
+  .pedido-flotante {
+    bottom: 8px;
+  }
+
+  .pedido-flotante .acciones-pedido {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    margin-bottom: 6px;
+  }
+
+  .pedido-flotante #ver-historial {
+    display: none;
+  }
+
+  .pedido-flotante #cancelar-pedido {
+    flex: 0 1 38%;
+    width: auto;
+    padding: 9px 10px;
+    font-size: .8rem;
+    white-space: nowrap;
+  }
+
+  .pedido-flotante #confirmar-pedido {
+    flex: 1;
+    width: auto;
+    padding: 9px 10px;
+    font-size: .85rem;
+    white-space: nowrap;
+  }
+
+  .pedido-preview {
+    max-height: 42vh;
+    padding: 10px 12px;
+  }
+
+  .pedido-preview h2 {
+    margin-bottom: 8px;
+    font-size: 1rem;
+  }
+
+  .pedido-preview ul {
+    min-height: 0;
+    max-height: 40px;
+    margin-bottom: 4px;
+    overflow-y: auto;
+    font-size: .85rem;
+  }
+
+  .pedido-preview .subtotal,
+  .pedido-preview .total {
+    margin-top: 4px;
+    padding-top: 4px;
+    font-size: .9rem;
+  }
+
+  .pedido-preview .total strong {
+    font-size: 1rem;
+  }
+
+  .pedido-preview .datos-pedido {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 4px 8px;
+    margin-top: 6px;
+  }
+
+  .pedido-preview .datos-pedido h2 {
+    grid-column: 1 / -1;
+    margin: 4px 0 2px;
+    font-size: .95rem;
+  }
+
+  .pedido-preview .datos-pedido fieldset {
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+
+  .pedido-preview .datos-pedido #campo-envio {
+    grid-column: 1 / -1;
+    margin: 0;
+  }
+
+  .pedido-preview .datos-pedido legend {
+    margin-bottom: 2px;
+    font-size: .72rem;
+  }
+
+  .pedido-preview .datos-pedido label {
+    margin: 0 2px 2px 0;
+    padding: 5px 6px;
+    font-size: .7rem;
+  }
+}

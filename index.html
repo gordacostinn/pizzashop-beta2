@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Control de ventas diario de Pizza Shop">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+  <title>Pizza Shop | Nueva jornada</title>
+</head>
+<body>
+  <main class="panel inicio">
+    <p class="eyebrow">Pizza Shop</p>
+    <h1>Comenzar jornada</h1>
+    <p class="descripcion">Indicá cuántas masas tenés disponibles para abrir las ventas.</p>
+    <form class="form-inicio" action="ventas.html">
+      <label class="sr-only" for="masas">Masas disponibles</label>
+      <input id="masas" name="masas" type="number" min="0" step="1" inputmode="numeric" required autofocus placeholder="Masas disponibles">
+      <button type="submit">Abrir ventas</button>
+    </form>
+  </main>
+</body>
+</html>

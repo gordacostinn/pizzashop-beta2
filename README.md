@@ -1,7 +1,3 @@
-# pizzashop-beta2
-Mobile-first beta web app for managing pizzeria sales, stock, custom business orders, deliveries, and daily summaries.
-
-
 # Pizza Shop
 
 Pizza Shop is a mobile-first beta web application for managing daily sales in a pizzeria. It was built around a real-world workflow: adding products quickly, checking available dough, confirming orders, and reviewing the day's results.
@@ -64,4 +60,4 @@ The next version will use Flask and SQL to add persistent storage, multi-device 
 
 ## Author
 
-Built by Santiago Perazzo.
+Built by [your name].
